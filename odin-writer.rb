@@ -5,7 +5,7 @@
 class OdinWriter < Formula
   desc "CLI que converte episódios de podcast e vídeos do YouTube em artigos para websites"
   homepage "https://github.com/mguilhermetavares/odin-writer"
-  version "1.0.2"
+  version "1.0.3"
   license "MIT"
 
   depends_on "ffmpeg" => :optional
@@ -13,16 +13,16 @@ class OdinWriter < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mguilhermetavares/odin-writer/releases/download/v1.0.2/odin-writer_darwin_amd64.tar.gz"
-      sha256 "6ff63f129f8a7ae30732b0803959bcbf6e44f7573ae6ad9df6ac80fff62b89f3"
+      url "https://github.com/mguilhermetavares/odin-writer/releases/download/v1.0.3/odin-writer_darwin_amd64.tar.gz"
+      sha256 "57d00304b21c08cbc8a1afcd53548ec17b25eb6a51b63ee563900bb292f6a17a"
 
       define_method(:install) do
         bin.install "odin-writer"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mguilhermetavares/odin-writer/releases/download/v1.0.2/odin-writer_darwin_arm64.tar.gz"
-      sha256 "abf69f9ba2c490cdc0baabc20686ff05f963c4d13c53e4598556369ea5ba2add"
+      url "https://github.com/mguilhermetavares/odin-writer/releases/download/v1.0.3/odin-writer_darwin_arm64.tar.gz"
+      sha256 "c691f4b11ec8765e3df7dead0aa36b86743a8077a970e2ef9108ae00b2317d09"
 
       define_method(:install) do
         bin.install "odin-writer"
@@ -32,15 +32,15 @@ class OdinWriter < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mguilhermetavares/odin-writer/releases/download/v1.0.2/odin-writer_linux_amd64.tar.gz"
-      sha256 "28c5ac5b50315d3f9297bcd74012cc9a6b968abff7d7df349dd43e1d5cd6f769"
+      url "https://github.com/mguilhermetavares/odin-writer/releases/download/v1.0.3/odin-writer_linux_amd64.tar.gz"
+      sha256 "e19b381a38e51d98dec73cb1a13624623b9a6f95559cf78419e6888ae0b0b063"
       define_method(:install) do
         bin.install "odin-writer"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mguilhermetavares/odin-writer/releases/download/v1.0.2/odin-writer_linux_arm64.tar.gz"
-      sha256 "23445453feda18a63389f81aadad8d147739b2dbcc8bdb6b12d7cf81818da521"
+      url "https://github.com/mguilhermetavares/odin-writer/releases/download/v1.0.3/odin-writer_linux_arm64.tar.gz"
+      sha256 "f0d91b26fb3f2cb1f9de3a3d01494228dabe7512c3f24c124a3ee3df53b35b9e"
       define_method(:install) do
         bin.install "odin-writer"
       end
