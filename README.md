@@ -13,4 +13,4 @@ brew install odin-writer
 
 | Tool | Description |
 |------|-------------|
-| [odin-writer](https://github.com/mguilhermetavares/odin-writer) | CLI que converte episódios de podcast e vídeos do YouTube em artigos para websites |
+| [odin-writer](https://github.com/mguilhermetavares/odin-writer) | CLI that converts podcast episodes and YouTube videos into written articles for websites |
